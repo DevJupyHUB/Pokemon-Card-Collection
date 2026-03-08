@@ -3,17 +3,21 @@ function PokemonCard({ pokemon, isFavorite, toggleFavorite }) {
 
   return (
     <div className="card">
-      <img src={imgUrl} alt={pokemon.name} />
+      <div className="card-header">{pokemon.name}</div>
 
-      <h3>{pokemon.name}</h3>
+      <div>
+        <img src={imgUrl} alt={pokemon.name} />
+      </div>
 
-      <p>Type: {pokemon.type}</p>
-      <p>HP: {pokemon.hp}</p>
-      <p>Attack: {pokemon.attack}</p>
+      <div className="type-badge">{pokemon.type}</div>
 
-      <button onClick={() => toggleFavorite(pokemon.id)}>
+      <p className="stats">
+        HP: {pokemon.hp} | Attack: {pokemon.attack}
+      </p>
+
+      <div className="favorite-bar" onClick={() => toggleFavorite(pokemon.id)}>
         {isFavorite ? "❤️ Favorite" : "🤍 Add Favorite"}
-      </button>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-function Filters({ types, setSelectedType, showFavorites, setShowFavorites }) {
+function Filters({ types, setSelectedType }) {
   return (
     <div className="filters">
       <button onClick={() => setSelectedType("All")}>All</button>
@@ -8,10 +8,6 @@ function Filters({ types, setSelectedType, showFavorites, setShowFavorites }) {
           {type}
         </button>
       ))}
-
-      <button onClick={() => setShowFavorites(!showFavorites)}>
-        {showFavorites ? "Show All" : "Show Favorites"}
-      </button>
     </div>
   );
 }

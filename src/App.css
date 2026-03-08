@@ -1,3 +1,9 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 body {
   font-family: Arial;
   text-align: center;
@@ -5,23 +11,28 @@ body {
   /*background: linear-gradient(to right, #a76cde, #ff88ff, #ffaeae);*/
   /*background: linear-gradient(to right, #6c5193, #f65a6d, #ffa600);*/
   /*background: linear-gradient(to right, #4ee64e, #ffa600, #f65a6d);*/
-  background-color: #050812;
+  /*background: linear-gradient(to right, #eaeff7, #adc1df, #7093c7);*/
+  /*background: radial-gradient(#eaeff7, #adc1df, #7093c7);*/
+  background: radial-gradient(#7093c7, #adc1df, #eaeff7);
+  /*background-color: #050812;*/
 }
 
 .grid {
   display: grid;
   /*grid-template-columns: repeat(auto-fill, 280px); */
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(5, auto); /* 5 rows */
+  grid-template-columns: repeat(5, 200px); /* 4 columns */
+  grid-template-rows: repeat(4, auto); /* 5 rows */
   gap: 16px;
   justify-content: center;
   margin: 0 auto;
 }
 
 .card {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
+  border: none;
   border-radius: 8px;
-  padding: 10px;
+  padding: 0px;
+  overflow: hidden;
   /*background: #f9f9f9;*/
   background: #d6e0ef;
   /*height: 250px; /* same height for all cards */
@@ -30,6 +41,13 @@ body {
 .card img {
   width: 100px;
   height: 100px;
+}
+
+.card-header {
+  background: #1d2c5e;
+  color: #d6e0ef;
+  padding: 8px;
+  margin: 0;
 }
 
 .filters {
@@ -59,5 +77,5 @@ button:hover {
   font-family: "Pokemon Solid", sans-serif;
   font-size: 80px;
   color: #ffcb05;
-  -webkit-text-stroke: 7px #3466af;
+  -webkit-text-stroke: 4px #3466af;
 }
