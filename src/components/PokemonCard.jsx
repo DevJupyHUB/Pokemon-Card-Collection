@@ -1,3 +1,5 @@
+import { typeColor } from "../data";
+
 function PokemonCard({ pokemon, isFavorite, toggleFavorite }) {
   const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
 
@@ -9,7 +11,12 @@ function PokemonCard({ pokemon, isFavorite, toggleFavorite }) {
         <img src={imgUrl} alt={pokemon.name} />
       </div>
 
-      <div className="type-badge">{pokemon.type}</div>
+      <div
+        className="type-badge"
+        style={{ backgroundColor: typeColor[pokemon.type] }}
+      >
+        {pokemon.type}
+      </div>
 
       <p className="stats">
         HP: {pokemon.hp} | Attack: {pokemon.attack}

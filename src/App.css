@@ -5,42 +5,25 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: "DanisPikachu", sans-serif;
   text-align: center;
-  /*background-color: #202020;*/
-  /*background: linear-gradient(to right, #a76cde, #ff88ff, #ffaeae);*/
-  /*background: linear-gradient(to right, #6c5193, #f65a6d, #ffa600);*/
-  /*background: linear-gradient(to right, #4ee64e, #ffa600, #f65a6d);*/
-  /*background: linear-gradient(to right, #eaeff7, #adc1df, #7093c7);*/
-  /*background: radial-gradient(#eaeff7, #adc1df, #7093c7);*/
   background: radial-gradient(#7093c7, #adc1df, #eaeff7);
-  /*background-color: #050812;*/
 }
 
 .grid {
   display: grid;
-  /*grid-template-columns: repeat(auto-fill, 280px); */
-  grid-template-columns: repeat(5, 200px); /* 4 columns */
-  grid-template-rows: repeat(4, auto); /* 5 rows */
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(4, auto);
   gap: 16px;
   justify-content: center;
   margin: 0 auto;
 }
 
 .card {
-  /*border: 1px solid #ccc;*/
   border: none;
   border-radius: 8px;
   padding: 0px;
-  overflow: hidden;
-  /*background: #f9f9f9;*/
   background: #d6e0ef;
-  /*height: 250px; /* same height for all cards */
-}
-
-.card img {
-  width: 100px;
-  height: 100px;
 }
 
 .card-header {
@@ -48,6 +31,22 @@ body {
   color: #d6e0ef;
   padding: 8px;
   margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.favorite-bar {
+  padding: 8px;
+  cursor: pointer;
 }
 
 .filters {
@@ -59,9 +58,8 @@ button {
   padding: 6px 10px;
   background: #d6e0ef;
   cursor: pointer;
-  /*border: 2px solid #c7a008; /* initial border color */
-  border-radius: 6px; /* rounded corners */
-  border: 2px solid transparent; /* invisible border by default */
+  border-radius: 6px;
+  border: 2px solid transparent;
   border-radius: 6px;
   transition:
     border-color 0.3s,
@@ -69,8 +67,8 @@ button {
 }
 
 button:hover {
-  border-color: #c7a008; /* border appears on hover */
-  background-color: #cce0ff; /* optional: slightly different background */
+  border-color: #1d2c5e;
+  background-color: #cce0ff;
 }
 
 .title {

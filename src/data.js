@@ -20,3 +20,16 @@ export const pokemons = [
   { id: 130, name: "Gyarados", type: "Water", hp: 95, attack: 125 },
   { id: 148, name: "Dragonair", type: "Dragon", hp: 61, attack: 84 },
 ];
+
+export const typeColor = {
+  Dragon: "#B2B4EC",
+  Electric: "#F0E7AE",
+  Fighting: "#F9C87F",
+  Fire: "#F46169",
+  Ghost: "#D0B8CA",
+  Grass: "#9ECE87",
+  Normal: "#E3D9CB",
+  Psychic: "#FBB3B7",
+  Rock: "#b7ae83",
+  Water: "#44A4DB",
+};
