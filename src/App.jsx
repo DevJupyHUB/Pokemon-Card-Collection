@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   const [selectedType, setSelectedType] = useState("All");
   const [favorites, setFavorites] = useState([]);
-  /*[...Set] Convert the Set back to an array*/
+
   const types = [...new Set(pokemons.map((p) => p.type))];
 
   function toggleFavorite(id) {

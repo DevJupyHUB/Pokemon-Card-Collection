@@ -18,7 +18,7 @@ function PokemonCard({ pokemon, isFavorite, toggleFavorite }) {
         {pokemon.type}
       </div>
 
-      <p className="stats">
+      <p>
         HP: {pokemon.hp} | Attack: {pokemon.attack}
       </p>
 
